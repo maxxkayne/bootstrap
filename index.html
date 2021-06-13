@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning Bootstrap v5 with sass</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <!--==============================================================================
   =                                   NAV BAR                                      =
   ==================================================================================-->
-    <nav class="navbar navbar-expand-lg navbar-light menu">
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="images/adaptivetech-1.png" width="100px" height="100px" alt="logo image" />
+                <img src="images/logo.png" width="100px" height="100px" alt="logo image" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,17 +45,58 @@
                         <a class="nav-link" href="#">Contact Me</a>
                     </li>
                 </ul>
-                <button type="button" class="rounded-pill btn-rounded">+61 4 4800 3140
+                <button type="button" class="rounded-pill btn-rounded">
+                    +61 4 4800 3140
                     <span>
                         <i class="fas fa-phone-alt"></i>
                     </span>
                 </button>
-                
             </div>
         </div>
     </nav>
 
-    <!--=======  End of NAV BAR  ========-->
+    <!--===============  End of NAV BAR  ======================================-->
+
+    <!--=========================================================================
+    =                Start The Intro Section                                    =
+    ============================================================================-->
+
+    <section id="home" class="intro-section">
+        <div class="container">
+            <div class="row align-items-center text-white">
+                <!-- START THE CONTENT FOR THE INTRO -->
+                <div class="col-md-6 intros">
+                    <h1 class="display-2">
+                        <span class="display-2--intro">Hey! I'm Mike</span>
+                        <span class="display-2--description lh-base">
+                            This is a multi-purpose responsive layout created with bootstrap 5.
+                            This is almost my first real website
+                        </span>
+                    </h1>
+                    <button type="button" class="rounded-pill-2 btn-rounded-2">
+                        Get in Touch
+                        <span><i class="fas fa-arrow-right"></i></span>
+                    </button>
+                </div>
+            </div>
+            <!-- START THE CONTENT FOR THE VIDEO -->
+            <div class="col-md-6 intros text-end">
+                <div class="video-box">
+                    <img src="images/tech/Web Developer_Monochromatic -light.png" alt="video illustration"
+                        class="img-fluid">
+                        <a href="#">
+                            <span>
+                                <i class="fas fa-play-circle"></i>
+                            </span>
+                            <span class="border-animation border-animation--border-1"></span>
+                            <span class="border-animation border-animation--border-2"></span>
+                        </a>
+                </div>
+            </div>
+        </div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1" d="M0,32L20,42.7C40,53,80,75,120,117.3C160,160,200,224,240,208C280,192,320,96,360,64C400,32,440,64,480,90.7C520,117,560,139,600,165.3C640,192,680,224,720,213.3C760,203,800,149,840,112C880,75,920,53,960,58.7C1000,64,1040,96,1080,138.7C1120,181,1160,235,1200,245.3C1240,256,1280,224,1320,181.3C1360,139,1400,85,1420,58.7L1440,32L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
+    </section>
 
     <script src="/assets/js/bootstrap.bundle.js"></script>
 </body>

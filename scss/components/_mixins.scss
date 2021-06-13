@@ -9,3 +9,12 @@
 @mixin sec_gradient {
     background: linear-gradient(to right, rgba($primary, .1), rgba($secondary, 1));
 }
+
+
+// ABSOLUTE CENTER
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
